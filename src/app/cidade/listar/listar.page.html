@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Cidades</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let cidade of listaCidade | async">
+      <ion-label> Cidade: {{ cidade.nome }}</ion-label>
+      <ion-label> Sigla do Estado: {{ cidade.estado }}</ion-label>
+    </ion-item>
+    <ion-button expand=full href='home' shape='round'> Voltar </ion-button>
+  </ion-list>
+</ion-content>
